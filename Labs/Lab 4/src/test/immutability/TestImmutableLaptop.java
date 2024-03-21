@@ -1,8 +1,5 @@
 package test.immutability;
-import immutability.Birthday;
-import immutability.ImmutableLaptop;
-import immutability.ImmutablePerson;
-import immutability.SO;
+import immutability.*;
 
 public class TestImmutableLaptop {
 
@@ -15,7 +12,7 @@ public class TestImmutableLaptop {
         sisOp.setName("Windows");
         sisOp.setArchitecture("x86");
 
-        ImmutableLaptop immutableLaptop = new ImmutableLaptop(sisOp,2023,"gray");
+        MutableLaptop immutableLaptop = new MutableLaptop(sisOp,2023,"gray");
 
         System.out.println(immutableLaptop);
         sisOp.setName("Linux");
